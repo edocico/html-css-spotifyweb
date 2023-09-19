@@ -64,13 +64,17 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #282828;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 26px;
+    padding-top: 10px;
 }
 
 /* player-left */
 
 .player-left {
     display: flex;
-    padding-left: 10px;
     background-color: var(--playerbg);
     align-items: center;
 }
@@ -150,6 +154,15 @@ body {
     width: 15%;
     height: 100%;
 }
+
+/* player right */
+
+.player-right {
+    color: white;
+    display: flex;
+}
+
+
 
 /* media query */
 
