@@ -29,6 +29,12 @@ body {
     flex-direction: column;
 }
 
+:root {
+    --playerbg:#141922
+    --playerwhite:#FFFFFF
+    --playergrey:#5A5A5A
+}
+
 /* debug */
 
 .debug {
@@ -52,6 +58,50 @@ body {
     width: 50px;
 }
 
+/* player-bar */
+
+.player-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+}
+
+/* player-left */
+
+.player-left {
+    display: flex;
+    padding-left: 10px;
+    background-color: var(--playerbg);
+    align-items: center;
+}
+
+.sinister-album {
+    width: 28px;
+}
+
+.player-left .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #5A5A5A;
+    font-size: 12px;
+}
+
+.player-left .track-name {
+    margin-left: 10px;
+    margin-right: 22px;
+}
+
+.track-name p {
+    color: white;
+    font-size: 14px;
+}
+
+.track-name span {
+    color: #5A5A5A;
+    font-size: 12px;
+}
+
 /* media query */
 
 
@@ -63,12 +113,25 @@ body {
 @media (min-width: 768px) {
    .side-bar {
         width: 230px;
-   } 
+   }
+   /* player-left */
+   
+   .sinister-album {
+    width: 38px;
+   }
 }
 
 
 @media (min-width: 992px) {
 
+    .player-left .icon {
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    .player-left .track-name {
+        margin-right: 42px;
+    }
 }
 
 
