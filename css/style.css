@@ -88,7 +88,7 @@ body {
     flex-direction: column;
     gap: 6px;
     color: #5A5A5A;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .player-left .track-name {
@@ -160,6 +160,21 @@ body {
 .player-right {
     color: white;
     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.volume-bar {
+    width: 80px;
+    height: 4px;
+    background-color: #5A5A5A;
+}
+
+.volume-level {
+    height: 4px;
+    background-color: white;
+    width: 20%;
 }
 
 
@@ -180,6 +195,16 @@ body {
    
    .sinister-album {
     width: 38px;
+   }
+
+   /* player right */
+
+   .player-right {
+    gap: 14px;
+   }
+
+   .volume-bar {
+    width: 102px;
    }
 }
 
