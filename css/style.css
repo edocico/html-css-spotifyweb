@@ -102,6 +102,29 @@ body {
     font-size: 12px;
 }
 
+/* player center */
+
+/* top */
+
+    .player-center {
+        width: 40%;
+    }
+
+    .player-center .top {
+        display: flex;
+        justify-content: center;
+        color: white;
+        gap: 20px;
+        align-items: center;
+    }
+
+.player-center .play {
+    font-size: 22px;
+    padding: 0 4px;
+}
+
+/* bottom */
+
 /* media query */
 
 
