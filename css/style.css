@@ -104,11 +104,13 @@ body {
 
 /* player center */
 
-/* top */
+
 
     .player-center {
         width: 40%;
-    }
+    }    
+
+/* top */
 
     .player-center .top {
         display: flex;
@@ -116,6 +118,7 @@ body {
         color: white;
         gap: 20px;
         align-items: center;
+        margin-bottom: 15px;
     }
 
 .player-center .play {
@@ -124,6 +127,29 @@ body {
 }
 
 /* bottom */
+
+.player-center .bottom {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-stamp {
+    font-size: 10px;
+}
+
+.time-bar {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #5A5A5A;
+}
+
+.time-progress {
+    background-color: white;
+    width: 15%;
+    height: 100%;
+}
 
 /* media query */
 
