@@ -364,7 +364,15 @@ body {
 
 /* nav menù hover */
 
-.home:hover {
+.tag-home:hover {
+    color: white;
+}
+
+.tag-search:hover {
+    color: white;
+}
+
+.tag-library:hover {
     color: white;
 }
 
@@ -470,6 +478,18 @@ body {
 }
 
 /* log hover */
+
+.tag-install:hover {
+    color: white;
+}
+
+.install img:hover {
+    scale: 1.2;
+}
+
+.user .profile-container:hover {
+    scale: 1.2;
+}
 
 
 
