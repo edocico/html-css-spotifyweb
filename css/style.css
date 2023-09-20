@@ -298,6 +298,9 @@ body {
 .side-bar {
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
+    gap: 18px;
+    padding-bottom: 6px;
 }
 
 /* logo */
@@ -308,9 +311,133 @@ body {
 }
 
 .logo-sm {
-    width: 40px;
+    width: 30px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* nav-menù */
+
+.nav-menù img {
+    color: #6B6B6B;
+    width: 20px;
+}
+
+.nav-menù .tag {
+    color: #6B6B6B;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-menù a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-menù {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menù ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* playlist */
+
+.playlist {
+    display: none;
+}
+
+.playlist h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.playlist-name {
+    color: #6B6B6B;
+    font-size: 12px;
+}
+
+.playlist li {
+    margin-bottom: 10px;
+}
+
+.create-playlist {
+    color: #6B6B6B;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.create-playlist span {
+    font-size: 12px;
+}
+
+.create-playlist i {
+    font-size: 30px;
+}
+
+/* log */
+
+.log {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.install img {
+    width: 14px;
+}
+
+.user img {
+    width: 16px;
+    color: white;
+}
+
+.profile-container {
+    background-color: #808080;
+    border-radius: 999px;
+    aspect-ratio: 1;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user span {
+    color: white;
+    font-weight: 700;
+    display: none;
+}
+
+.install {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.install span {
+    color: #6B6B6B;
+    font-size: 12px;
+    display: none;
+}
 
 
 /* media query */
@@ -376,6 +503,41 @@ body {
    .side-bar {
     padding-left: 20px;
     padding-top: 20px;
+    gap: 30px;
+   }
+
+   /* nav-menù */
+
+   .nav-menù .tag {
+    display: block;
+   }
+
+   .nav-menù {
+    align-items: flex-start;
+   }
+
+   .logo {
+    justify-content: flex-start;
+   }
+
+   /* playlist */
+
+   .playlist {
+    display: block;
+   }
+
+   /* log */
+
+   .log {
+    align-items: flex-start;
+   }
+
+   .install span {
+    display: block;
+   }
+
+   .user span {
+    display: block;
    }
 
 }
