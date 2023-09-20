@@ -16,7 +16,33 @@
         <!--app-main-->
         <div class="app-main">
             <!--sidebar-->
-            <aside class="side-bar debug"></aside>
+            <aside class="side-bar">
+                <div class="logo">
+                    <figure>
+                        <a href="#">
+                            <img class="logo-bg" src="./img/logo.svg" alt="spotify logo">
+                        </a>
+                        <a href="#">
+                            <img class="logo-sm" src="./img/logo-small.svg" alt="spotify logo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="nav-menù">
+                    <ul>
+                        <li>
+                            <a class="home" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="search" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="library" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="playlist"></div>
+                <div class="log"></div>
+            </aside>
             <!--app-content-->
             <div class="app-content debug"></div>
         </div>
@@ -61,7 +87,7 @@
                     <div class="time-stamp">0:25</div>
                     <div class="time-bar">
                         <div class="time-progress"></div>
-                        <i class="fa-solid fa-circle"></i>
+                        <div class="progress-handler"></div>
                     </div>
                     <div class="time-stamp">4:35</div>
                 </div>
@@ -73,6 +99,7 @@
                 <div><i class="fa-solid fa-volume-high"></i></div>
                 <div class="volume-bar">
                     <div class="volume-level"></div>
+                    <div class="volume-handler"></div>
                 </div>
             </div>
         </nav>
