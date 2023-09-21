@@ -76,7 +76,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
     overflow: hidden;
 }
 
@@ -586,6 +586,22 @@ body {
     color: #6B6B6B;
 }
 
+.evident-item {
+    position: relative;
+}
+
+.evident-item::before {
+    content: '';
+    height: 3px;
+    width: 40px;
+    background-color: #95DD30;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
 /* content nav hover */
 
 .content-nav li:hover a {
@@ -707,6 +723,7 @@ body {
 
 .artist .album-cover {
     
+     
 }
 
 .artist a {
