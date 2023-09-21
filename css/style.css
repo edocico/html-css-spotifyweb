@@ -530,6 +530,7 @@ body {
 
 .upgrade-bar {
     background-color: #070B12;
+    opacity: 0.9;
     padding: 20px 20px;
     position: absolute;
     top: 0px;
