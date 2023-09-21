@@ -537,6 +537,7 @@ body {
     right: 0px;
     display: flex;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .upgrade-button {
@@ -600,7 +601,7 @@ body {
     padding: 0 10px;
 }
 
-.recently-played .row {
+.music-content .row {
     display: flex;
     flex-wrap: wrap;
     row-gap: 12px;
@@ -681,6 +682,39 @@ body {
 }
 
 .john-doe h2 {
+    margin-bottom: 15px;
+}
+
+/* popular artist */
+
+.artist .row {
+    display: flex;
+    
+}
+
+.artist .col {
+    flex-basis: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/*.popular-artist h2 {
+    margin-bottom: 15px;
+}*/
+
+.artist .album-cover {
+    
+}
+
+.artist a {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.artist h2 {
     margin-bottom: 15px;
 }
 
@@ -825,6 +859,10 @@ body {
         flex-basis: calc(100% / 4);
     }
 
+    .artist .col {
+        flex-basis: calc(100% / 4);
+    }
+
 }
 
 
@@ -839,6 +877,10 @@ body {
     }
 
     .john-doe .col {
+        flex-basis: calc(100% / 6);
+    }
+
+    .artist .col {
         flex-basis: calc(100% / 6);
     }
 
