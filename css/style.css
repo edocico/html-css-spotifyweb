@@ -546,6 +546,7 @@ body {
     line-height: 2.5em;
     border-radius: 30px;
     padding: 5px 40px;
+    font-weight: 700;
 }
 
 /* music content */
@@ -554,7 +555,65 @@ body {
     background-color: #141922;
     flex-grow: 1;
     overflow: auto;
+    padding-top: 94px;
 }
+
+.music-content h2 {
+    color: white;
+}
+
+/* content nav */
+
+.content-nav {
+    margin-bottom: 40px;
+}
+
+.content-nav a {
+    padding-top: 20px;
+}
+
+.content-nav .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.content-nav a {
+    text-transform: uppercase;
+    color: #6B6B6B;
+}
+
+/* content nav hover */
+
+.content-nav li:hover a {
+    color: white;
+}
+
+/* recently played */
+
+.col-12 {
+    padding: 0 10px;
+}
+
+.col {
+    padding: 0 10px;
+}
+
+.recently-played .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recently-played .col {
+    flex-basis: calc(100% / 2);
+}
+
+.play-overlay {
+    display: none;
+}
+
+
 
 
 
@@ -683,11 +742,24 @@ body {
 
     /* side-bar */
 
+    /* recently played */
+
+    .recently-played .col {
+        flex-basis: calc(100% / 4);
+    }
+
 }
 
 
 @media (min-width: 1200px) {
 
     /* side-bar */
+
+    /* recently played */
+
+    .recently-played .col {
+        flex-basis: calc(100% / 6);
+    }
+
 
 }
