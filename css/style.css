@@ -726,7 +726,9 @@ body {
 }*/
 
 .artist .album-cover {
-    border-radius: 50px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    overflow: hidden;
      
 }
 
